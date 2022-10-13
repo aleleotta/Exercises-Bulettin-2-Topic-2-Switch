@@ -31,7 +31,7 @@ public class Exercise5 {
 			}
 			default -> {
 				System.out.println("You haven´t inserted a driving license category. Please execute and try again.");
-			} //If an incorrect string or value is inserted, an error message will pou up.
+			} //If an incorrect string or value is inserted, an error message will pop up.
 		}
 		sc.close(); //Closing scanner
 	}
