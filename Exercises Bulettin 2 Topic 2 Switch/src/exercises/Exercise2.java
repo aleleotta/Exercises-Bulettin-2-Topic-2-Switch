@@ -3,11 +3,11 @@ import java.util.*;
 
 public class Exercise2 {
 	public static void main(String[] args) {
-		int chosenDay;
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Choose a day of the week by typing an integer from 1 to 7. Number: ");
-		chosenDay = sc.nextInt();
-		switch (chosenDay){
+		int chosenDay; //Declaration of variable
+		Scanner sc = new Scanner(System.in); //Declaration of scanner
+		System.out.println("Choose a day of the week by typing an integer from 1 to 7. Number: "); //The program asks the user for input.
+		chosenDay = sc.nextInt(); //User input
+		switch (chosenDay) { //Switch block begins. 
 			case 1:
 				System.out.println("Monday");
 				break;
@@ -30,8 +30,8 @@ public class Exercise2 {
 				System.out.println("Sunday");
 				break;
 			default:
-				System.out.println("Invalid number.");
+				System.out.println("Invalid number."); //The day wasn´t typed correctly.
 		}
-		sc.close();
+		sc.close(); //Closing scanner
 	}
 }

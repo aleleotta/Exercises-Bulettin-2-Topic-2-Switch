@@ -3,11 +3,11 @@
 
 public class Exercise1 {
 	public static void main(String[] args) {
-		int grade;
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Type in a grade: ");
-		grade = sc.nextInt();
-		switch (grade) {
+		int grade; //Declaration of variable
+		Scanner sc = new Scanner(System.in); //Declaration of scanner
+		System.out.println("Type in a grade: "); //The program asks for input.
+		grade = sc.nextInt(); //User input
+		switch (grade) { //Switch block begins.
 			case 0,1,2,3,4:
 				System.out.println("UNSATISFACTORY");
 				break;
@@ -24,8 +24,8 @@ public class Exercise1 {
 				System.out.println("EXCELLENT");
 				break;
 			default:
-				System.out.println("Grade is not valid.");
+				System.out.println("Grade is not valid."); //Incorrect grade input
 		}
-		sc.close();
+		sc.close(); //Closing scanner
 	}
 }

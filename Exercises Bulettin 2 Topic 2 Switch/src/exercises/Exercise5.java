@@ -3,11 +3,11 @@ import java.util.*;
 
 public class Exercise5 {
 	public static void main(String[] args) {
-		String drivingLicense;
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Insert your driving license category: ");
-		drivingLicense = sc.next();
-		switch (drivingLicense) {
+		String drivingLicense; //Declaration of variable
+		Scanner sc = new Scanner(System.in); //Declaration of scanner
+		System.out.println("Insert your driving license category: "); //The program asks the user for specific category.
+		drivingLicense = sc.next(); //User input
+		switch (drivingLicense) { //Switch block begins.
 			case "B1" -> {
 				System.out.println("Cars");
 			}
@@ -31,8 +31,8 @@ public class Exercise5 {
 			}
 			default -> {
 				System.out.println("You haven´t inserted a driving license category. Please execute and try again.");
-			}
+			} //If an incorrect string or value is inserted, an error message will pou up.
 		}
-		sc.close();
+		sc.close(); //Closing scanner
 	}
 }
